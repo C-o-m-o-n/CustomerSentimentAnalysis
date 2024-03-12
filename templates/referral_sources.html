@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referral Sources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Referral Sources</h1>
+
+        <h2>Where Visitors Are Coming From</h2>
+        <img src="{{ url_for('static', filename='where_visitors_bar_chart.png') }}" alt="Where Visitors Bar Chart">
+
+        <h2>Marketing Channels Effectiveness</h2>
+        <img src="{{ url_for('static', filename='marketing_channels_grouped_bar_chart.png') }}" alt="Marketing Channels Grouped Bar Chart">
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competitor Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .bullet-graph {
+            margin-bottom: 30px;
+        }
+        .comparison-matrix {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .comparison-matrix th, .comparison-matrix td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+	<div style="border-bottom:2px solid pink; margin-bottom:10px">
+		<table width="100%">
+			<tr>
+				<td>
+					<a href="/"><img src="static/ksm_poly_logo.png"width="100"></a>
+				</td>
+				<td style="text-align:center">
+					<h3 class="text-center mb-4">Customer Behaviour Prediction Using Sentiment Analysis</h3>
+				</td>
+				<td>
+					<span style="cursor:pointer" title="Back to dashboard" onclick="history.back(-1)">&larr;Back</span>
+				</td>
+			</tr>
+		</table>
+	</div>
+    <div class="container">
+        <h1>Competitor Analysis</h1>
+
+        <!-- Bullet Graph -->
+        <div class="bullet-graph">
+            <!-- Insert Bullet Graph here -->
+            <!-- You can use JavaScript or a library like Matplotlib to generate the Bullet Graph -->
+        </div>
+
+        <!-- Comparison Matrix -->
+        <table class="comparison-matrix">
+            <thead>
+                <tr>
+                    <th>Course</th>
+                    <th>Comparison with Competitors</th>
+                    <th>Benchmarking against Similar Courses</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in range(courses|length) %}
+                    <tr>
+                        <td>{{ courses[i] }}</td>
+                        <td>{{ comparison_with_competitors[i] }}</td>
+                        <td>{{ benchmarking_against_similar_courses[i] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

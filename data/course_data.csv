@@ -1,0 +1,24 @@
+course_name,course_description,course_duration,course_level,credits_offered,prerequisites,class_size,instructor_information
+Psychology,"An introductory course covering basic principles of psychology including perception, cognition, learning, and motivation.",12 weeks,Undergraduate,3 credits,None,30,Dr. Emily Adhiambo
+Analytical Chemistry,"Fundamental principles of Analytical chemistry, including nomenclature, stereochemistry, and reaction mechanisms.",16 weeks,Undergraduate,4 credits,General Chemistry,25,Dr. Michael Kimani
+Computer Science,Introduction to programming concepts and problem-solving techniques using a high-level programming language.,14 weeks,Undergraduate,3 credits,None,40,Prof. Sarah Lumumba
+Economics,"Introduction to economic theory, covering topics such as supply and demand, consumer behavior, and market structures.",15 weeks,Undergraduate,3 credits,Introductory Economics,35,Dr. David Bokelo
+Literature,Developing writing skills through the study of various genres and rhetorical strategies.,13 weeks,Undergraduate,3 credits,Placement Test,20,Prof. Laura Muthaka
+Mathematics,"Introduction to differential calculus, covering limits, continuity, derivatives, and their applications.",16 weeks,Undergraduate,4 credits,Pre-Calculus,30,Dr. James Taiyo
+Sociology,"Exploration of sociological concepts and theories, including culture, socialization, and social institutions.",14 weeks,Undergraduate,3 credits,None,25,Dr. Jessica Wanjiku
+Marketing,"Introduction to the principles and practices of marketing, including market analysis, product development, and promotion strategies.",15 weeks,Undergraduate,3 credits,None,30,Prof. Brian Juma
+Physics,"Introduction to fundamental principles of physics, including mechanics, thermodynamics, and electromagnetism.",16 weeks,Undergraduate,4 credits,Algebra-based Physics,25,Dr. Jennifer Anyango
+Spanish Language and Culture I,"Introduction to basic Spanish language skills, including speaking, listening, reading, and writing.",14 weeks,Undergraduate,3 credits,None,20,Prof. Maria Raburu
+Statistics,"Introduction to statistical concepts and methods, including descriptive statistics, probability, and hypothesis testing.",13 weeks,Undergraduate,3 credits,Algebra,35,Dr. William Danda
+Applied Biology I,"Introduction to biological principles, including cellular structure, genetics, and evolution.",15 weeks,Undergraduate,4 credits,High School Biology,30,Dr. Sarah Telimu
+Ethics,"Examination of ethical issues in business, including corporate social responsibility, ethical decision-making, and stakeholder management.",14 weeks,Undergraduate,3 credits,None,25,Dr. Robert Hadija
+World History: Prehistory,"Survey of world history from prehistory to 1500 CE, focusing on major civilizations and historical developments.",16 weeks,Undergraduate,3 credits,None,40,Prof. Elizabeth Tugen
+Photography and graphic design,"Introduction to digital photography techniques, including composition, exposure, and editing using industry-standard software.",14 weeks,Undergraduate,3 credits,None,20,Prof. Michael Bosire
+Philosophy,"Introduction to major philosophical questions and theories, including ethics, metaphysics, and epistemology.",13 weeks,Undergraduate,3 credits,None,25,Dr. Thomas Wikanga
+Art,"Survey of art history from ancient civilizations to the medieval period, covering major artistic movements and styles.",16 weeks,Undergraduate,3 credits,None,30,Prof. Jennifer Lenana
+Environmental Science,"Introduction to environmental science, covering topics such as ecosystems, biodiversity, and human impacts on the environment.",15 weeks,Undergraduate,3 credits,None,25,Dr. Richard Musinde
+Political Science,"Introduction to political science, covering topics such as political institutions, ideologies, and international relations.",14 weeks,Undergraduate,3 credits,None,35,Dr. Amanda Kabugwa
+French,"Introduction to basic French language skills, including speaking, listening, reading, and writing.",14 weeks,Undergraduate,3 credits,None,20,Prof. Philip Mogaka
+Music,"Introduction to music theory concepts, including notation, scales, intervals, and basic harmony.",13 weeks,Undergraduate,3 credits,None,25,Dr. Katherine Esire
+Anthropology,"Introduction to the study of human cultures and societies, including cultural anthropology, archaeology, and biological anthropology.",14 weeks,Undergraduate,3 credits,None,30,Dr. Michael Awiti
+Civic Engineering,"Introduction to engineering principles and problem-solving techniques, including hands-on projects and design challenges.",15 weeks,Undergraduate,3 credits,Algebra,35,Prof. Christopher Jelimu

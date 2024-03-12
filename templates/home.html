@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../static/css/all.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        /* padding: 20px; */
+      }
+      .container {
+        max-width: 800px;
+        /* margin: 0 auto; */
+      }
+
+      .card {
+        /* background-color: #ee196d; */
+        border-radius: 20px;
+        padding: 15px;
+        width: 345px;
+        color: white;
+        margin: 10px;
+      }
+      .card3-bg{
+        background-color: #155502;
+      }
+      .card2-bg{
+        background-color: #34025f;
+      }
+      .card1-bg{
+        background-color:  #69022b;
+      }
+      .card4-bg{
+        background-color:  #694604;
+      }
+      .card5-bg{
+        background-color: #021555;
+      }
+      .card6-bg{
+        background-color: #008080;
+      }
+      small{
+
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div style="border-bottom: 2px solid pink">
+    </div>
+    <div class="container">
+    -->
+    <!-- <h1 class="text-center mb-4">The Kisumu National Polytechnic</h1>
+    <h3 class="text-center mb-4">
+      Customer Behaviour Prediction Using Sentiment Analysis
+    </h3>
+    <h5 class="text-center mb-4">Course Analysis Platform</h5>  -->
+
+      <div style="display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; border-radius: 20px;">
+        <div class="card card1-bg">
+          <div style="display: flex; align-items: center">
+            <i
+              style="
+                color: #69022b;
+                background-color: white;
+                border-radius: 10px;
+                padding: 15px;
+              "
+              class="fa fa-people-group"
+            ></i>
+            <div
+              style="display: flex; flex-direction: column; margin-left: 4px"
+            >
+              <small>2450 Customers</small>
+              <small>Total traffic gained</small>
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              margin: 10px 0;
+              flex-direction: row;
+              align-items: center;
+              gap: 4px;
+              background-color: #db4782;
+              width: 60%;
+              border-radius: 10px;
+              padding: 3px;
+            "
+          >
+           <i
+              style="
+                color: #69022b;
+                background-color: white;
+                border-radius: 8px;
+                padding: 10px;
+              "
+              class="fa fa-calendar"
+            ></i>
+            <small>30 April 2024</small>
+          </div>
+        </div>
+
+        <div class="card card2-bg">
+            <div style="display: flex; align-items: center">
+              <i
+                style="
+                  color: #34025f;
+                  background-color: white;
+                  border-radius: 10px;
+                  padding: 15px;
+                "
+                class="fa fa-desktop"
+              ></i>
+              <div
+                style="display: flex; flex-direction: column; margin-left: 4px"
+              >
+                <small>Desktop Devices</small>
+                <small>Mostly used device</small>
+              </div>
+            </div>
+  
+            <div
+              style="
+                display: flex;
+                margin: 10px 0;
+                flex-direction: row;
+                align-items: center;
+                gap: 4px;
+                background-color: #8942c7;
+                width: 60%;
+                border-radius: 10px;
+                padding: 3px;
+              "
+            >
+              <i
+                style="
+                  color: #ee196d;
+                  background-color: white;
+                  border-radius: 8px;
+                  padding: 10px;
+                "
+                class="fa fa-calendar"
+              ></i>
+              <small>30 April 2024</small>
+            </div>
+          </div>
+
+          <div class="card card3-bg">
+            <div style="display: flex; align-items: center">
+              <i
+                style="
+                  color: #155502;
+                  background-color: white;
+                  border-radius: 10px;
+                  padding: 15px;
+                "
+                class="fa fa-external-link-alt"
+              ></i>
+              <div
+                style="display: flex; flex-direction: column; margin-left: 4px"
+              >
+                <small>210 Referrals</small>
+                <small>Total Customer referals</small>
+              </div>
+            </div>
+  
+            <div
+              style="
+                display: flex;
+                margin: 10px 0;
+                flex-direction: row;
+                align-items: center;
+                gap: 4px;
+                background-color: #4fb82f;
+                width: 60%;
+                border-radius: 10px;
+                padding: 3px;
+              "
+            >
+              <i
+                style="
+                  color: #155502;
+                  background-color: white;
+                  border-radius: 8px;
+                  padding: 10px;
+                "
+                class="fa fa-calendar"
+              ></i>
+              <small>30 April 2024</small>
+            </div>
+          </div>
+
+          <div>
+            <h3>Course Page View Summary</h3>
+            <a href="/traffic-analysis" target="iframe"> 
+              <img style="height: 250px; width: 540px;" src="{{ url_for('static', filename='page_views_bar_chart.png') }}" alt="Page Views Bar Chart">
+            </a>
+          </div>
+  
+          <div>
+            <h3>Course Bounce Rate Summary </h3>
+            <a href="/traffic-analysis" target="iframe">
+
+              <img style="height: 250px; width: 540px;" src="{{ url_for('static', filename='bounce_rate_pie_chart.png') }}" alt="Bounce Rate Pie Chart">
+            </a>
+          </div>
+
+          <div class="card card5-bg">
+            <div style="display: flex; align-items: center">
+              <i
+                style="
+                  color: #021555;
+                  background-color: white;
+                  border-radius: 10px;
+                  padding: 15px;
+                "
+                class="fa fa-mouse-pointer"
+              ></i>
+              <div
+                style="display: flex; flex-direction: column; margin-left: 4px"
+              >
+                <small>210 Click-throughs</small>
+                <small>Total Click-through rates</small>
+              </div>
+            </div>
+  
+            <div
+              style="
+                display: flex;
+                margin: 10px 0;
+                flex-direction: row;
+                align-items: center;
+                gap: 4px;
+                background-color: #234ac9;
+                width: 60%;
+                border-radius: 10px;
+                padding: 3px;
+              "
+            >
+              <i
+                style="
+                  color: #021555;
+                  background-color: white;
+                  border-radius: 8px;
+                  padding: 10px;
+                "
+                class="fa fa-calendar"
+              ></i>
+              <small>30 April 2024</small>
+            </div>
+          </div>
+          <div class="card card4-bg">
+            <div style="display: flex; align-items: center">
+              <i
+                style="
+                  color: #694604;
+                  background-color: white;
+                  border-radius: 10px;
+                  padding: 15px;
+                "
+                class="fa fa-book"
+              ></i>
+              <div
+                style="display: flex; flex-direction: column; margin-left: 4px"
+              >
+                <small>21 Liked Courses</small>
+                <small>Most liked courses</small>
+              </div>
+            </div>
+  
+            <div
+              style="
+                display: flex;
+                margin: 10px 0;
+                flex-direction: row;
+                align-items: center;
+                gap: 4px;
+                background-color: #cf9830;
+                width: 60%;
+                border-radius: 10px;
+                padding: 3px;
+              "
+            >
+              <i
+                style="
+                  color: #694604;
+                  background-color: white;
+                  border-radius: 8px;
+                  padding: 10px;
+                "
+                class="fa fa-calendar"
+              ></i>
+              <small>30 April 2024</small>
+            </div>
+          </div>
+          <div class="card card6-bg">
+            <div style="display: flex; align-items: center">
+              <i
+                style="
+                  color: #008080;
+                  background-color: white;
+                  border-radius: 10px;
+                  padding: 15px;
+                "
+                class="fa fa-star"
+              ></i>
+              <div
+                style="display: flex; flex-direction: column; margin-left: 4px"
+              >
+                <small>Economics</small>
+                <small>Most engaging course</small>
+              </div>
+            </div>
+  
+            <div
+              style="
+                display: flex;
+                margin: 10px 0;
+                flex-direction: row;
+                align-items: center;
+                gap: 4px;
+                background-color: #35d4d4;
+                width: 60%;
+                border-radius: 10px;
+                padding: 3px;
+              "
+            >
+              <i
+                style="
+                  color: #008080;
+                  background-color: white;
+                  border-radius: 8px;
+                  padding: 10px;
+                "
+                class="fa fa-calendar"
+              ></i>
+              <small>30 April 2024</small>
+            </div>
+          </div>
+        
+
+        </div>
+      </div>
+      <div style="margin-top: 30px; display: flex; flex-direction: row; flex-wrap: wrap;">
+  
+      
+<div>
+  <h3>Course Time Summary</h3>
+  <a href="/traffic-analysis" target="iframe">
+
+    <img style="height: 250px; width: 540px;" src="{{ url_for('static', filename='time_spent_line_chart.png') }}" alt="Time Spent Line Chart">
+  </a>
+</div>
+
+<div>
+  <h3>Course Click-through Rates Summary</h3>
+  <a href="/traffic-analysis" target="iframe">
+
+    <img style="height: 250px; width: 540px;" src="{{ url_for('static', filename='click_conversion_rates_bar_chart.png') }}" alt="Click-through and Conversion Rates Bar Chart">
+  </a>     
+
+</div>
+
+    
+  </div>
+  </body>
+</html>

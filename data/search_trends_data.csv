@@ -1,0 +1,11 @@
+most_searched_courses,frequency_of_searches,popular_search_terms
+Computer Science,1200,"Python programming, Java programming, Web development"
+Data Science,1000,"Machine learning, Data analysis, Python programming"
+Finance,900,"Investment, Financial markets, Corporate finance"
+Medicine,800,"Medical school, Anatomy, Physiology"
+Psychology,700,"Clinical psychology, Cognitive psychology, Behavioral psychology"
+Business Administration,600,"MBA programs, Marketing, Entrepreneurship"
+Engineering,500,"Mechanical engineering, Civil engineering, Electrical engineering"
+Art and Design,400,"Graphic design, Fine arts, Photography"
+Applied Biology,300,"Genetics, Ecology, Microbiology"
+Languages,200,"Spanish language, French language, Mandarin Chinese"

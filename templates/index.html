@@ -1,0 +1,255 @@
+
+<!-- course_data.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../static/css/all.css"
+    />
+    <style>
+      /* Add custom CSS styles here */
+      body {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+      .top-bar {
+        /* color: white; */
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: red; */
+      }
+      .nav-link {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+      }
+      .nav-link i{
+        margin-right: 4px;
+      }
+      .sidebar-title {
+        margin-top: 50px;
+        margin-left: 30px;
+      }
+      .divider {
+        height: .5px;
+        background-color: #bdbdbe;
+        margin: 0 10px;
+      }
+      .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        color: white;
+        height: 100svh;
+        width: 250px;
+        /* line-height: 23px; */
+        background-color: #1b2242;
+      }
+      .active,
+      .nav-link:hover {
+        background-color: #bb7cf1;
+        border-radius: 5px;
+      }
+      .list-item {
+        margin-top: 10px;
+        padding: 10px;
+      }
+
+      .container,
+      main {
+        margin-left: 250px;
+        height: auto;
+        width: 100%;
+      }
+
+      @media screen and (max-width: 600px) {
+        .sidebar {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+        .sidebar a {
+          float: left;
+        }
+        div .content {
+          margin-left: 0;
+        }
+      }
+      /* .loader{
+        position: absolute;
+        top: 30px;
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- <div class="loader">
+<p>Loading... </p>
+    </div> -->
+    <!-- sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-title">
+        <!-- <img style="height: 90px; width: 90px; border-radius: 100%; margin-right: 10px;" src="{{ url_for('static', filename='ksm_poly_logo.png')}}"> -->
+        <p>Main menu</p>
+      </div>
+
+      <div class="divider"></div>
+      <div>
+        <div class="list-item">
+          <a href="/course-data" class="nav-link" target="iframe"
+            >
+            <i style="color: white;" class="fa fa-book"></i>
+            Course data</a
+          >
+        </div>
+        <div class="list-item">
+          <a href="/search-trends" class="nav-link" target="iframe">
+            <i style="color: white;" class="fa fa-search"></i>
+            Search Trends
+          </a>
+        </div>
+        <div class="list-item">
+          <a href="/traffic-analysis" class="nav-link" target="iframe"
+            >
+            <i style="color: white;" class="fa fa-people-group"></i>
+            Traffic analysis</a
+          >
+        </div>
+
+        <div class="list-item">
+          <a href="/user-interactions" class="nav-link" target="iframe"
+            >
+            <i style="color: white;" class="fa fa-compress-alt"></i>
+            User interactions</a
+          >
+        </div>
+        <div class="list-item">
+          <a href="/engagement-metrics" class="nav-link" target="iframe"
+            >
+            <i style="color: white;" class="fa fa-compress"></i>
+            Engagement metrics</a
+          >
+        </div>
+
+        <div class="list-item">
+          <a href="/time-trends" class="nav-link" target="iframe"
+            >
+            <i style="color: white;" class="fa fa-timeline"></i>
+            Time Trends</a
+          >
+        </div>
+        <div class="list-item">
+          <a href="/referral-sources" class="nav-link" target="iframe"
+            >
+            <i style="color: white;" class="fa fa-external-link-alt"></i>
+            Referral Sources</a
+          >
+        </div>
+        <div class="list-item">
+          <a href="/device-usage" class="nav-link" target="iframe"
+            ><i style="color: white;" class="fa fa-desktop-alt"></i>Device Usage</a
+          >
+        </div>
+        <div class="list-item">
+          <a href="/competitor-analysis" class="nav-link" target="iframe"
+            ><i style="color: white;" class="fa fa-arrow-trend-up"></i>Competitor Analysis</a
+          >
+        </div>
+      </div>
+    </aside>
+
+    <div class="top-bar">
+      <div
+        style="
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-left: 250px;
+        "
+      >
+      <a href="/home" target="iframe" >
+        <img
+        style="
+            height: 70px;
+            width: 70px;
+            border-radius: 100%;
+            margin-right: 10px;
+            "
+          src="{{ url_for('static', filename='ksm_poly_logo.png')}}"
+          />
+        </a>
+        <!-- <p style="font-size: larger;">The Kisumu National polytechnic</p> -->
+      </div>
+      <!-- <p>Customer behavior prediction sentiment analysis </p> -->
+      <div
+        style="
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-right: 5px;
+        "
+      >
+      <i style="color: #1b2242; padding: 15px;" class="fa fa-bell"></i>
+      <a href="/">
+        <i style="color: #1b2242; width: 30px;" class="fa fa-power-off"></i>
+      </a>
+        <img
+          style="
+            height: 30px;
+            width: 30px;
+            border-radius: 100%;
+            margin-right: 10px;
+          "
+          src="{{ url_for('static', filename='bello-olamide.jpg')}}"
+        />
+        
+      </div>
+    </div>
+
+    <!-- main Dashboard content -->
+    <!-- <main>
+<p>Hello worldlus, coveron to engineering . Christopher Johnson
+  </p>
+    </main> -->
+
+    <div class="container">
+      <iframe
+        name="iframe"
+        style="width: 100%; height: 90svh; margin: 3px; border: none"
+        src="/home"
+      >
+      </iframe>
+    </div>
+
+    <script>
+      // Get all the navigation links
+
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      // Add click event listeners to each navigation link
+      navLinks.forEach((link) => {
+        link.addEventListener("click", function () {
+          // Remove 'active' class from all navigation links
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+          });
+
+          // Add 'active' class to the clicked navigation link
+          this.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!-- course_data.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Data</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Add custom CSS styles here */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Course Data</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Course Name</th>
+                    <th>Description</th>
+                    <th>Duration</th>
+                    <th>Level</th>
+                    <th>Credits Offered</th>
+                    <th>Prerequisites</th>
+                    <th>Class Size</th>
+                    <th>Instructor Information</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for course in course_data[1:] %}
+                    <tr>
+                        <td>{{ course[0] }}</td>
+                        <td>{{ course[1] }}</td>
+                        <td>{{ course[2] }}</td>
+                        <td>{{ course[3] }}</td>
+                        <td>{{ course[4] }}</td>
+                        <td>{{ course[5] }}</td>
+                        <td>{{ course[6] }}</td>
+                        <td>{{ course[7] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
